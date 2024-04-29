@@ -4,6 +4,9 @@ import './App.css'
 import Home from './pages/Home'
 import Dashboard from './pages/Dashboard'
 import AllBlogs from './pages/AllBlogs'
+import Login from './components/Login'
+import Register from './components/Register'
+
 
 function App() {
 
@@ -15,6 +18,8 @@ function App() {
       <Route path='/' element={<Home/>} />
       <Route path='/dashboard' element={<Dashboard/>} />
       <Route path='/Allblogs' element={<AllBlogs/>} />
+      <Route path="/login" element={<Login/>}/>
+      <Route path="/registration" element={<Register/>}/>
      </Routes>
 
 
