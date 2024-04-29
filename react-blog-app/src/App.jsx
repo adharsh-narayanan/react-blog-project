@@ -6,6 +6,9 @@ import Dashboard from './pages/Dashboard'
 import AllBlogs from './pages/AllBlogs'
 import AddBlog from './components/AddBlog'
 import EditBlog from './components/EditBlog'
+import Login from './components/Login'
+import Register from './components/Register'
+
 
 function App() {
 
@@ -18,6 +21,8 @@ function App() {
       <Route path='/Add' element={<AddBlog/>} />    
       <Route path='/editblog' element={<EditBlog/>}></Route>  
       <Route path='/Allblogs' element={<AllBlogs/>} />
+      <Route path="/login" element={<Login/>}/>
+      <Route path="/registration" element={<Register/>}/>
      </Routes>
 
 
