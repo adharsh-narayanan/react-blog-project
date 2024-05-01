@@ -1,14 +1,14 @@
 
 
-import {Link} from 'react-router-dom';
-import email from "./images/email.png";
-import lock from "./images/lock.png";
-import profile from "./images/icon.jpg";
+import { Link } from 'react-router-dom';
+import email from "../images/image.png";
+import lock from "../images/lock.png";
+import profile from "../images/icon.jpg";
 
 
 function Login() {
 
-    
+
     return (
         <form>
             <div className='main'>
@@ -16,13 +16,13 @@ function Login() {
                     <div>
                         <div className='imgs'>
                             <div className='container-image'>
-                                <img src={profile} alt='profile' className='profile'/>
+                                <img src={profile} alt='profile' className='profile' />
                             </div>
                         </div>
                         <div>
                             <h1 className='LHeader'>Login</h1>
                             <div>
-                                <img src={email} alt="emial" className='email' />
+                                <img src={email} alt="email" className='email' />
                                 <input type="email" placeholder='Enter Email-id' className='fill' />
                             </div>
                             <div className='second-input'>
