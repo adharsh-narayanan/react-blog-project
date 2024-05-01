@@ -3,6 +3,9 @@
 import { commonApi } from "./commonApi"
 import { serverUrl } from "./serverUrl"
 
+//Blog Section
+//---------------------
+
 //Api to add a blog
 
 export const addBlogApi = async (reqbody)=>{
@@ -11,34 +14,25 @@ export const addBlogApi = async (reqbody)=>{
 
 //Api to get all uploaded blog
 
-export const getBlogApi = async(reqbody)=>{
+export const getBlogApi = async()=>{
     return await commonApi('get',`${serverUrl}/blog`,'')
 }
 
 //api to get a single blog
-export const getABlogApi = async(reqbody)=>{
-    return await commonApi('get',`${serverUrl}/blog/${id}`,{})
+export const getaBlogApi = async(id)=>{
+    return await commonApi('get',`${serverUrl}/blog/${id}`,'')
 }
 
 //Api to delete a  blog
-export const deleteBlogApi = async(reqbody)=>{
-    return await commonApi('delete',`${serverUrl}/blog`,'')
+export const deleteBlogApi = async(id)=>{
+    return await commonApi('delete',`${serverUrl}/blog/${id}`,{})
 }
 //Api to edit a blog
 
-export const editBlogApi = async(reqbody)=>{
-    return await commonApi('put',`${serverUrl}/blog`,'')
+export const editBlogApi = async(id,reqbody)=>{
+    return await commonApi('put',`${serverUrl}/blog/${id}`,reqbody)
 }
 
+//user Section
+//--------------------
 
-//api to add a user
-
-export const addnewUser = async (reqbody)=>{
-    return await commonApi ('post',`${serverUrl}/user`,reqbody)
-}
-
-//api to get user 
-
-export const getUserApi = async(reqbody)=>{
-    return await commonApi('get',`${serverUrl}/user`,'')
-}
