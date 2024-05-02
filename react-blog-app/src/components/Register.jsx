@@ -1,13 +1,9 @@
-
-
-import { Link } from 'react-router-dom';
-
-
+import React from 'react'
+import {Link} from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faLock, faUser } from '@fortawesome/free-solid-svg-icons';
 
 function Register() {
-
-
-
 
 
 
@@ -19,33 +15,29 @@ function Register() {
                         <div>
                             <h1>Registration</h1>
                             <div>
-                                <img alt="emial" className='email' />
+
+                                
+                                <FontAwesomeIcon icon={faUser} className='email'/>
                                 <input type="text" placeholder='Enter Name' className='fill' />
                             </div>
                             <div className='mail-id'>
-                                <img alt="emial" className='email' />
+                                
+                                <FontAwesomeIcon icon={faEnvelope} className='email'/>
                                 <input type="email" placeholder='Enter Email-id' className='fill' />
                             </div>
                             <div className='mail-id'>
-                                <img alt="emial" className='email' />
+                                
+                                <FontAwesomeIcon icon={faLock} className='email'/>
                                 <input type="password" placeholder='Enter New Password' className='fill' />
-                            </div>
-                            <div className='select'>
-                                {/* <label className='plist'>Intrest</label> */}
-                                <select >
-                                    <option>Android Studio</option>
-                                    <option>ReactJS</option>
-                                    <option>Python</option>
-                                    <option>Machine Learning</option>
-                                </select>
-                            </div>
+                            </div>                   
+                        
                             <div className='login-btn'>
                                 <Link to='/home'>
                                     <button type="submit">Register</button>
                                 </Link>
                             </div>
                             <div className='reg-link'>
-                                <p>If Account exist then</p><Link className='link' to='/login'><li>Login!!!</li></Link>
+                                <p>If Account exist then</p><Link className='link' to='/login'><li>Login!</li></Link>
                             </div>
                         </div>
                     </div>
