@@ -1,9 +1,8 @@
 
-
+import React from 'react'
 import {Link} from 'react-router-dom';
-import email from "./images/email.png";
-import lock from "./images/lock.png";
-import profile from "./images/icon.jpg";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope, faLock, faUser } from '@fortawesome/free-solid-svg-icons'
 
 
 function Login() {
@@ -16,17 +15,20 @@ function Login() {
                     <div>
                         <div className='imgs'>
                             <div className='container-image'>
-                                <img src={profile} alt='profile' className='profile'/>
+                                
+                                <FontAwesomeIcon icon={faUser} className='profile'/>
                             </div>
                         </div>
                         <div>
                             <h1 className='LHeader'>Login</h1>
                             <div>
-                                <img src={email} alt="emial" className='email' />
+                                
+                                <FontAwesomeIcon icon={faEnvelope} className='email'/>
                                 <input type="email" placeholder='Enter Email-id' className='fill' />
                             </div>
                             <div className='second-input'>
-                                <img src={lock} alt='password' className='email' />
+                                
+                                <FontAwesomeIcon icon={faLock} className='email'/>
                                 <input type="password" placeholder='Enter Password' className='fill' />
                             </div>
                             {/* HERE WITH THE HELP OF LINK PROVIDED BY REACT-ROUTER WE CAN NAVIGATE TO OTHER PAGES 
