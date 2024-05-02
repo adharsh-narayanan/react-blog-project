@@ -3,11 +3,11 @@ import React from 'react'
 import {Link} from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faLock, faUser } from '@fortawesome/free-solid-svg-icons'
-
+import { Link } from 'react-router-dom';
 
 function Login() {
 
-    
+
     return (
         <form>
             <div className='main'>
@@ -15,15 +15,18 @@ function Login() {
                     <div>
                         <div className='imgs'>
                             <div className='container-image'>
-                                
                                 <FontAwesomeIcon icon={faUser} className='profile'/>
                             </div>
                         </div>
                         <div>
                             <h1 className='LHeader'>Login</h1>
                             <div>
+
                                 
                                 <FontAwesomeIcon icon={faEnvelope} className='email'/>
+
+                             
+
                                 <input type="email" placeholder='Enter Email-id' className='fill' />
                             </div>
                             <div className='second-input'>
