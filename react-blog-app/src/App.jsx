@@ -4,13 +4,14 @@ import './App.css'
 import Home from './pages/Home'
 import Dashboard from './pages/Dashboard'
 import AllBlogs from './pages/AllBlogs'
+import Header from './components/Header'
 
 function App() {
 
 
   return (
     <>
-     <h1>blog</h1>
+     <Header/>
      <Routes>
       <Route path='/' element={<Home/>} />
       <Route path='/dashboard' element={<Dashboard/>} />
