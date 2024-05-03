@@ -19,7 +19,8 @@
     justify-content: center;
     display: flex;
     padding: 90px 0px 90px 0;
-    background-color: rgb(234, 52, 52);
+    background-image: url('./src/assets/purple-stroke-lines-cyber-space-background-loop-animation-free-video.jpg')
+    
   }
   
   .sub-main{
