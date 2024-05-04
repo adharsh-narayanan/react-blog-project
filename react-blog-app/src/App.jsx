@@ -7,14 +7,15 @@ import AddBlog from './components/AddBlog'
 import EditBlog from './components/EditBlog'
 import Login from './components/Login'
 import Register from './components/Register'
-
+import Header from './components/Header'
 
 function App() {
 
 
   return (
-    <>     
-     <Routes>
+    <>   
+     <Header/>
+     <Routes>    
       <Route path='/' element={<Home/>} />
       <Route path='/dashboard' element={<Dashboard/>} />
       <Route path='/Add' element={<AddBlog/>} />    
