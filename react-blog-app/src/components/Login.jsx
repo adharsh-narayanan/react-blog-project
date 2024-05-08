@@ -1,18 +1,21 @@
 
 import React from 'react'
+
+
 import {Link} from 'react-router-dom';
+
 
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faLock, faUser } from '@fortawesome/free-solid-svg-icons'
-import { Link } from 'react-router-dom';
+import '../components/Style.css'
 
 
 function Login() {
 
 
     return (
-        <form>
+         <form>
             <div className='main'>
                 <div className='sub-main'>
                     <div>

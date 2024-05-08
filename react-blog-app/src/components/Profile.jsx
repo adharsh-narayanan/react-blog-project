@@ -1,5 +1,4 @@
 import React from 'react'
-import { Col, Row } from 'react-bootstrap'
 import EditProfile from './EditProfile'
 import { faFacebook, faInstagram, faLinkedin, faSquareXTwitter, faStackOverflow } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

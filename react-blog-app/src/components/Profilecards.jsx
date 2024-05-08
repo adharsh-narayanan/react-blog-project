@@ -37,6 +37,7 @@ function Profilecards() {
     console.log(result);
   }
 
+ 
 
 
   //function to delete a blog
@@ -47,7 +48,6 @@ function Profilecards() {
       await deleteBlogApi(id)
       setdisplay(true)
       toast.success("Blog deleted successfully")
-
     }
 
   }
@@ -70,7 +70,7 @@ function Profilecards() {
               <Card.Body>
                 <h6 className='mb-2'>{item.category}</h6>
                 <div className='d-flex justify-content-between'>
-                  <h6 className='text-secondary'>By User</h6>
+                  <h6 className='text-secondary'>{item.name}</h6>
                   <h6 style={{ fontSize: "12px", color: "grey" }}>{item.time}</h6>
                 </div>
                 <h3>{item.title}</h3>
