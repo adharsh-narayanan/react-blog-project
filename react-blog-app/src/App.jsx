@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
@@ -10,14 +8,15 @@ import AddBlog from './components/AddBlog'
 import EditBlog from './components/EditBlog'
 import Login from './components/Login'
 import Register from './components/Register'
-
+import Header from './components/Header'
 
 function App() {
 
 
   return (
-    <>     
-     <Routes>
+    <>   
+     <Header/>
+     <Routes>    
       <Route path='/' element={<Home/>} />
       <Route path='/dashboard' element={<Dashboard/>} />
       <Route path='/Add' element={<AddBlog/>} />    
@@ -34,5 +33,7 @@ To access the id parameter inside the EditBlog component, you can use the usePar
   )
 }
 
+
 export default App
->>>>>>> 45d40d2daefcad32b3b855a595bbcb0eee345b71
+
+
