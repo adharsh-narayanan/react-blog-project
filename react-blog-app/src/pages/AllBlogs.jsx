@@ -6,6 +6,7 @@ import Categories from '../components/Categories'
 function AllBlogs() {
   const [item,setItems] = useState(Data)
   const menuItems = [...new Set(Data.map((val) => val.category))]
+  
 
   const filterItems =(cat) => {
     const newItems = Data.filter((newval) => newval.category === cat)
