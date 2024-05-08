@@ -1,31 +1,38 @@
 
-
+import React from 'react'
 import {Link} from 'react-router-dom';
-// import image from '../assets/images/image.png'
-// import lock from' ../assests/images/lock.png'
-// import profile from '../assets/images/icon.png'
+
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope, faLock, faUser } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom';
+
 
 function Login() {
 
-    
+
     return (
         <form>
             <div className='main'>
                 <div className='sub-main'>
                     <div>
-                        <div className='imgs'>
-                            <div className='container-image'>
-                                {/* <img src={profile} alt='profile' className='profile'/> */}
+                        <div className='imgs'>                           
+
+                        
+
+                                <FontAwesomeIcon icon={faUser} className='profile'/>
+
                             </div>
                         </div>
                         <div>
                             <h1 className='LHeader'>Login</h1>
-                            <div>
-                                {/* <img src={ image } alt="emial" className='email' /> */}
+                             <div>
+
+                                <FontAwesomeIcon icon={faEnvelope} className='email' />
                                 <input type="email" placeholder='Enter Email-id' className='fill' />
                             </div>
                             <div className='second-input'>
-                                {/* <img src={lock} alt='password' className='email' /> */}
+                                <FontAwesomeIcon icon={faLock} className='email' />
                                 <input type="password" placeholder='Enter Password' className='fill' />
                             </div>
                             {/* HERE WITH THE HELP OF LINK PROVIDED BY REACT-ROUTER WE CAN NAVIGATE TO OTHER PAGES 
