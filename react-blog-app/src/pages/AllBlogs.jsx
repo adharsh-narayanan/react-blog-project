@@ -1,9 +1,14 @@
 import React from 'react'
+import Category from '../components/Category'
+import  Card  from '../components/Card'
 
 function AllBlogs() {
 
   return (
-    <div>AllBlogs</div>
+<>
+     <Category/>
+     
+</>
   )
 }
 
