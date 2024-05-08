@@ -8,6 +8,7 @@ import AddBlog from './components/AddBlog'
 import EditBlog from './components/EditBlog'
 import Login from './components/Login'
 import Register from './components/Register'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
       <Route path="/login" element={<Login/>}/>
       <Route path="/registration" element={<Register/>}/>
      </Routes>
-
+        <Footer/>
 
     </>
   )

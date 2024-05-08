@@ -1,9 +1,9 @@
 
 
 import {Link} from 'react-router-dom';
-import mail from "./images/email.png";
-import lock from "./images/lock.png";
-import profile from "./images/icon.jpg";
+// import image from '../assets/images/image.png'
+// import lock from' ../assests/images/lock.png'
+// import profile from '../assets/images/icon.png'
 
 
 function Register() {
@@ -25,11 +25,11 @@ function Register() {
                                 <input type="text" placeholder='Enter Name' className='fill' />
                             </div>
                             <div className='mail-id'>
-                                <img src={mail} alt="emial" className='email' />
+                                <img src={image} alt="emial" className='email' />
                                 <input type="email" placeholder='Enter Email-id' className='fill' />
                             </div>
                             <div className='mail-id'>
-                                <img src={lock} alt="emial" className='email' />
+                                {/* <img src={lock} alt="emial" className='email' /> */}
                                 <input type="password" placeholder='Enter New Password' className='fill' />
                             </div>
                             <div className='select'>
