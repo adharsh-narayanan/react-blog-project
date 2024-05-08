@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faLock, faUser } from '@fortawesome/free-solid-svg-icons';
 
@@ -20,7 +21,8 @@ function Register() {
                                 <FontAwesomeIcon icon={faUser} className='email'/>
                                 <input type="text" placeholder='Enter Name' className='fill' />
                             </div>
-                            <div className='mail-id'>
+                            
+                            <div className='mail-id'>    
                                 
                                 <FontAwesomeIcon icon={faEnvelope} className='email'/>
                                 <input type="email" placeholder='Enter Email-id' className='fill' />
@@ -28,6 +30,7 @@ function Register() {
                             <div className='mail-id'>
                                 
                                 <FontAwesomeIcon icon={faLock} className='email'/>
+
                                 <input type="password" placeholder='Enter New Password' className='fill' />
                             </div>                   
                         
