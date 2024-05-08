@@ -1,61 +1,36 @@
-
 import React from 'react'
 
-
-import {Link} from 'react-router-dom';
-
-
-
+import './Style.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faLock, faUser } from '@fortawesome/free-solid-svg-icons'
-import '../components/Style.css'
-
+import { faLock, faUser } from '@fortawesome/free-solid-svg-icons'
 
 function Login() {
-
-
-    return (
-         <form>
-            <div className='main'>
-                <div className='sub-main'>
-                    <div>
-                        <div className='imgs'>                           
-
-                        
-
-                                <FontAwesomeIcon icon={faUser} className='profile'/>
-
-                            </div>
-                        </div>
-                        <div>
-                            <h1 className='LHeader'>Login</h1>
-                             <div>
-
-                                <FontAwesomeIcon icon={faEnvelope} className='email' />
-                                <input type="email" placeholder='Enter Email-id' className='fill' />
-                            </div>
-                            <div className='second-input'>
-                                <FontAwesomeIcon icon={faLock} className='email' />
-                                <input type="password" placeholder='Enter Password' className='fill' />
-                            </div>
-                            {/* HERE WITH THE HELP OF LINK PROVIDED BY REACT-ROUTER WE CAN NAVIGATE TO OTHER PAGES 
-                                IN LINK WE HAVE TO PASS LOCATION OF THE NAVIGATING PAGE AS PATH IS DEFINED IN THE APP.JS*/}
-                            <div className='login-btn'>
-                                <Link to='/home'>
-                                    <button type="button">Login</button>
-                                </Link>
-                            </div>
-                            <div className='reg-link'>
-                                <Link className='link' to='/registration'>
-                                    <li>Register Now</li>
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  return (
+    <>
+    <div id='body' >
+    <div  className='wrapper'>
+        <form action="">
+            <h1>Login</h1>
+            <div className='input-box'>
+                <input type="text" placeholder='Username'required />
+                <FontAwesomeIcon icon={faUser} className='icon' />
             </div>
-        </form>
-    )
+            <div className='input-box'>
+                <input type="text" placeholder='Password'required />
+                <FontAwesomeIcon icon={faLock} className='icon' />
+            </div>
+            <div className='remember-forget'>
+                <label htmlFor=""><input type="checkbox" />Remember me</label>
+                <a href="#">Forget Password</a>
+            </div>
+            <button type='submit'>Login</button>
+            <div className='register-link'>
+                <p>Don't have an account?<Link className='link' to='/registration'><li>Register</li></Link></p>
+    
+    </div>
+    </div>
+    </>
+  )
 }
 
 export default Login
