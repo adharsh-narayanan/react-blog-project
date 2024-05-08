@@ -1,4 +1,5 @@
 import React from 'react'
+
 import './Style.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faLock, faUser } from '@fortawesome/free-solid-svg-icons'
@@ -30,8 +31,8 @@ function Register() {
             <button type='submit'>Login</button>
             <div className='register-link'>
                 <p>Already have an account?<Link className='link' to='/login'><li>Login!</li></Link></p>
-            </div>
-        </form>
+
+
 
     </div>
     </div>

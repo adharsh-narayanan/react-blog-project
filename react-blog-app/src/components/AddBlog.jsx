@@ -52,8 +52,8 @@ function AddBlog() {
       if (!title, !category, !blogImage, !description) {
          toast.warning('completely enter the details')
       } else {
-         //hat includes all the key-value pairs from the addBlog object, along with an additional time key set to the value of timestamp. 
-         const finalData = { ...addBlog, time: timestamp }
+         //new object that includes all the key-value pairs from the addBlog object, along with an additional time key set to the value of timestamp. 
+         const finalData = { ...addBlog, time: timestamp, name: 'gdr' }
          //api call for uploading data
          const result = await addBlogApi(finalData)
 
@@ -100,7 +100,7 @@ function AddBlog() {
 
    return (
       <>
-         <div className='d-flex justify-content-center' >
+         <div className='d-flex justify-content-center p-3' >
             <div className='mt-5' style={{ width: '600px', height: '600px' }}>
 
                <div className='d-flex justify-content-center align-items-center mb-5'> <h2>Add Blog</h2></div>

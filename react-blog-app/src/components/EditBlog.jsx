@@ -7,7 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 function EditBlog() {
 
    //To access the id parameter inside the EditBlog 
-   const { id } = useParams()
+   const {id} = useParams()
 
    const [editblog, setEditblog] = useState({
       title: "",
