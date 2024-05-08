@@ -7,14 +7,17 @@ import AddBlog from './components/AddBlog'
 import EditBlog from './components/EditBlog'
 import Login from './components/Login'
 import Register from './components/Register'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 
 function App() {
 
 
   return (
-    <>     
-     <Routes>
+    <>   
+     <Header/>
+     <Routes>    
       <Route path='/' element={<Home/>} />
       <Route path='/dashboard' element={<Dashboard/>} />
       <Route path='/Add' element={<AddBlog/>} />    
@@ -25,7 +28,7 @@ To access the id parameter inside the EditBlog component, you can use the usePar
       <Route path="/login" element={<Login/>}/>
       <Route path="/registration" element={<Register/>}/>
      </Routes>
-
+        <Footer/>
 
     </>
   )
